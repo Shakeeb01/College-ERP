@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render   # from django.shortcuts import render,get_object_or_404
 from info.models import *
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -9,7 +9,7 @@ from itertools import chain
 from rest_framework import serializers, status
 from rest_framework.generics import ListAPIView
 from django.db.models.signals import post_save
-from rest_framework.generics import get_object_or_404
+from rest_framework.generics import get_object_or_404  # instead of importing get_object_or_404 from generics we can import this by django.shortcuts
 from rest_framework import generics
 from rest_framework import mixins
 from rest_framework import status
